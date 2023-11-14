@@ -1,0 +1,37 @@
+name: Feature Request
+description: Suggest an idea for FEO Client Examples
+title: "ENH: "
+labels: [Enhancement, Needs Triage]
+
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Feature Type
+      description: Please check what type of feature request you would like to propose.
+      options:
+        - label: >
+            Adding new functionality to FEO Client Examples
+        - label: >
+            Changing existing functionality in FEO Client Examples
+        - label: >
+            Removing existing functionality in FEO Client Examples
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem Description
+      description: >
+        Please describe what problem the feature would solve, e.g. "I wish I could use FEO Client Examples to ..."
+      placeholder: >
+        I wish I could use FEO Client Examples to..
+    validations:
+      required: true
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature Description
+      description: >
+        Please describe how the new feature would be implemented, using pseudocode if relevant.
+      placeholder: >
+    validations:
+      required: true

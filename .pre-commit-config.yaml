@@ -1,0 +1,16 @@
+exclude: '^(\.tox|ci/templates|\.bumpversion\.cfg)(/|$)'
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: trailing-whitespace
+  - id: check-docstring-first
+  - id: check-added-large-files
+  - id: check-ast
+  - id: check-merge-conflict
+  - id: check-yaml
+  - id: debug-statements
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+    args: ['--fix=lf']

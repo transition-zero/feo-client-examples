@@ -1,5 +1,5 @@
 name: Feature Request
-description: Suggest an idea for FEO Client Examples
+description: Suggest an idea for feo-client-examples
 title: "ENH: "
 labels: [Enhancement, Needs Triage]
 
@@ -11,19 +11,19 @@ body:
       description: Please check what type of feature request you would like to propose.
       options:
         - label: >
-            Adding new functionality to FEO Client Examples
+            Adding new functionality to feo-client-examples
         - label: >
-            Changing existing functionality in FEO Client Examples
+            Changing existing functionality in feo-client-examples
         - label: >
-            Removing existing functionality in FEO Client Examples
+            Removing existing functionality in feo-client-examples
   - type: textarea
     id: description
     attributes:
       label: Problem Description
       description: >
-        Please describe what problem the feature would solve, e.g. "I wish I could use FEO Client Examples to ..."
+        Please describe what problem the feature would solve, e.g. "I wish I could use feo-client-examples to ..."
       placeholder: >
-        I wish I could use FEO Client Examples to..
+        I wish I could use feo-client-examples to..
     validations:
       required: true
   - type: textarea

@@ -65,6 +65,6 @@ jobs:
         echo "$(jq '.data' $HOME/tmp.json)" > $HOME/.tz-feo/token.json
 
     - name: Test with pytest and capture coverage
-    run: |
-      pip install pytest nbmake
-      pytest --nbmake feo-client-examples/*.ipynb
+      run: |
+        pip install pytest nbmake
+        pytest --nbmake feo-client-examples/*.ipynb

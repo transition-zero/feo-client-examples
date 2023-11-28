@@ -15,11 +15,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      AUTH0_DOMAIN: ${{ vars.AUTH0_DOMAIN}}
-      AUTH0_AUDIENCE: ${{ vars.AUTH0_AUDIENCE}}
-      CLIENT_SECRET: ${{ vars.CLIENT_SECRET}}
-      TEST_USER: ${{ vars.TEST_USER}}
-      TEST_PW: ${{ vars.TEST_PW}}
+      AUTH0_DOMAIN: ${{ vars.AUTH0_DOMAIN }}
+      AUTH0_AUDIENCE: ${{ vars.AUTH0_AUDIENCE }}
+      TEST_USER: ${{ vars.TEST_USER }}
+      TEST_PW: ${{ secrets.TEST_PW }}
+      CLIENT_ID: ${{ secrets.CLIENT_ID }}
+      CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
 
     steps:

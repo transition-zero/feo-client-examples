@@ -14,14 +14,6 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    env:
-      AUTH0_DOMAIN: ${{ vars.AUTH0_DOMAIN }}
-      AUTH0_AUDIENCE: ${{ vars.AUTH0_AUDIENCE }}
-      TEST_USER: ${{ vars.TEST_USER }}
-      TEST_PW: ${{ secrets.TEST_PW }}
-      CLIENT_ID: ${{ secrets.CLIENT_ID }}
-      CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-
 
     steps:
 
@@ -40,16 +32,16 @@ jobs:
       id: curlToken
       uses: satak/webrequest-action@master
       with:
-        url: "https://${{vars.AUTH0_DOMAIN}}/oauth/token"
+        url: "https://${{ vars.AUTH0_DOMAIN }}/oauth/token"
         method: POST
         payload: '{
-          "client_id": "${{vars.CLIENT_ID}}",
-          "username": "${{vars.TEST_USER}}",
-          "password": "${{vars.TEST_PW}}",
+          "client_id": "${{ secrets.CLIENT_ID }}",
+          "username": "${{ vars.TEST_USER }}",
+          "password": "${{ secrets.TEST_PW }}",
           "realm": "Username-Password-Authentication",
-          "client_secret": "${{secrets.CLIENT_SECRET}}",
+          "client_secret": "${{ secrets.CLIENT_SECRET }}",
           "scope": "openid permissions",
-          "audience": "${{vars.AUTH0_AUDIENCE}}",
+          "audience": "${{ vars.AUTH0_AUDIENCE }}",
           "grant_type": "http://auth0.com/oauth/grant-type/password-realm"
         }'
 

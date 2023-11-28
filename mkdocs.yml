@@ -1,0 +1,24 @@
+site_name: FEO Client Examples
+docs_dir: feo-client-examples
+
+plugins:
+- search
+- mkdocstrings
+- mkdocs-jupyter
+
+nav:
+  - Home: index.md
+  - Nodes: 0_nodes.ipynb
+  - Assets: 1_assets.ipynb
+  - 'Technology Projections': 2_technology_projections.ipynb
+  - 'System Model Results': 3_system_model_results.ipynb
+  - 'Geometries': 4_geometries.ipynb
+repo_url: https://github.com/transition-zero/feo-client-examples
+
+theme:
+  name: material
+  favicon: https://images.squarespace-cdn.com/content/v1/63d1607c35efbd5cbfee1529/294783be-8cea-4002-8dc7-c3c7842c0401/favicon.ico?format=100w
+  logo: https://feo.transitionzero.org/brand/logo_short_white.svg
+  features:
+    - header.autohide
+    - navigation.tabs

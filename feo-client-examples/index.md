@@ -17,13 +17,13 @@ A repo for examples for the FEO Python client.
 
 ### Get Started
 
-No installation is required if running via Google Colab. Just head to the [feo-client-examples](feo-client-examples) notebooks
+No installation is required if running via Google Colab. Just head to the [feo-client-examples](../feo-client-examples) notebooks
 and click the `Open in Colab` button at the top of the notebook you want to run.
 
 ### Contributing
 
-See the [Contributing Guide](CONTRIBUTING.md) and our [Code of Conduct](CODE-OF-CONDUCT.md).
+See the [Contributing Guide](../CONTRIBUTING.md) and our [Code of Conduct](../CODE-OF-CONDUCT.md).
 
 ### License
 
-[Apache license 2.0](LICENSE)
+[Apache license 2.0](../LICENSE)

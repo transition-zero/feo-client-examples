@@ -1,11 +1,10 @@
 [![License][license badge]][license]
 [![Contributor Covenant][contributor covenant badge]][code of conduct]
 
-[code of conduct]: https://github.com/transition-zero/tz-cookiecutter/blob/main/CODE-OF-CONDUCT.md
 [contributor covenant badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
+[code of conduct]: https://github.com/transition-zero/feo-client-examples/blob/main/CODE-OF-CONDUCT.md
 [license badge]: https://img.shields.io/badge/License-Apache_2.0-blue.svg
 [license]: https://opensource.org/licenses/Apache-2.0
-<!-- badges-end -->
 
 # FEO Client Examples
 

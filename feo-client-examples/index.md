@@ -60,6 +60,8 @@ There are currently five example notebooks in this repository. In each case the 
 
 * [4 - Geometries](https://github.com/transition-zero/feo-client-examples/blob/main/feo-client-examples/4_geometries.ipynb): Object-oriented interface for vector features and geometries via the Python client.
 
+* [5 - Land Cover](https://github.com/transition-zero/feo-client-examples/blob/main/feo-client-examples/5_land_cover.ipynb): Object-oriented interface for land cover data via the Python client.
+
 The notebooks are designed to be run in order, as each notebook builds on the previous one. However, each notebook is self-contained, so you can also jump to the notebook that interests you most.
 
 ---

@@ -13,6 +13,7 @@ nav:
   - 'Technology Projections': 2_technology_projections.ipynb
   - 'System Model Results': 3_system_model_results.ipynb
   - 'Geospatial Data': 4_geospatial_data.ipynb
+  - 'Land Cover': 5_land_cover.ipynb
 repo_url: https://github.com/transition-zero/feo-client-examples
 
 theme:

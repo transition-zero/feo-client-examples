@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   trigger_docs_rebuild:
@@ -11,4 +14,4 @@ jobs:
 
     steps:
       - name: Trigger documentation rebuild
-        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_AdQsPmL4x3EiuqOcmznskUrnKAf2/1cTZzHFdm2
+        run: curl -X POST ${{secrets.DOCS_BUILD_WEBHOOK}}

@@ -1,0 +1,14 @@
+name: Trigger docs rebuild on main branch push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger_docs_rebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger documentation rebuild
+        run: curl -X POST ${{secrets.DOCS_BUILD_WEBHOOK}}

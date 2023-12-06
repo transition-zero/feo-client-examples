@@ -56,4 +56,5 @@ jobs:
     - name: Test with pytest --nbmake
       run: |
         pip install pytest nbmake
-        pytest --nbmake feo-client-examples/*.ipynb
+        pytest --nbmake --nbmake-timeout=60 feo-client-examples/*.ipynb 
+        
